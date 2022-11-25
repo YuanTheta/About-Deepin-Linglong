@@ -26,7 +26,6 @@ sudo apt install linglong-builder \
                  linglong-bin \
                  linglong-installer
 ```
-
 **Deepin V23**  
 已预装玲珑环境,无需安装。
 ### (2)浏览器版本太旧
@@ -44,11 +43,9 @@ ll-cli list
 ```
 ll-cli uninstall org.deepin.calculator
 ```
-
-等待卸载完成即可。
-
 默认卸载最高版本，可以通过`appid`后附加对应版本号卸载指定版本：
 例如：
 ```
 ll-cli uninstall org.deepin.calculator/5.1.2
 ```
+该命令执行成功后，该玲珑应用将从系统中被卸载掉。
