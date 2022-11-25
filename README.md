@@ -30,7 +30,7 @@ sudo apt install linglong-builder \
 已预装玲珑环境,无需安装。
 ### (2)浏览器版本太旧
 从[Google Chrome](https://www.google.cn/intl/zh-CN/chrome/)官网下载最新版本的Chrome浏览器。  
-![chrome](https://github.com/YuanTheta/Deepin-Linglong/raw/main/Pictures/chrome.jpg)
+![chrome](https://github.com/YuanTheta/Deepin-Linglong/raw/main/Pictures/chrome.jpg)  
 之后回到[1.如何安装玲珑应用](#1.如何安装玲珑应用)
 ## 3.右键菜单中无法卸载玲珑应用
 使用`ll-cli list`查看已安装的玲珑应用。
@@ -39,13 +39,13 @@ ll-cli list
 ```
 复制将要卸载的应用的`appId`。
 
-使用`ll-cli uninstall`+`appId`卸载玲珑应用。  
-例如：
+使用`ll-cli uninstall`+`appId`卸载玲珑应用。
+如下：
 ```
 ll-cli uninstall org.deepin.calculator
 ```
-默认卸载最高版本，可以通过`appid`后附加对应版本号卸载指定版本：
-例如：
+默认卸载最高版本，可以通过`appid`后附加对应版本号卸载指定版本。
+如下：
 ```
 ll-cli uninstall org.deepin.calculator/5.1.2
 ```
