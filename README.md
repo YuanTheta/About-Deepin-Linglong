@@ -18,7 +18,7 @@ uname -r
 内核版本要求>=4.19。  
 *x86架构4.19内核需要开启user namespace。*  
 
-使用apt安装玲珑环境  
+使用apt安装玲珑环境：  
 ```
 sudo apt install linglong-builder \
                  linglong-box \
@@ -28,7 +28,27 @@ sudo apt install linglong-builder \
 ```
 
 **Deepin V23**  
-已预装玲珑环境
+已预装玲珑环境,无需安装。
 ### (2)浏览器版本太旧
 从[Google Chrome](https://www.google.cn/intl/zh-CN/chrome/)官网下载最新版本的Chrome浏览器。  
 ![chrome](https://github.com/YuanTheta/Deepin-Linglong/raw/main/Pictures/chrome.jpg)
+## 3.右键菜单中无法卸载玲珑应用
+使用`ll-cli list`查看已安装的玲珑应用。
+```
+ll-cli list
+```
+复制将要卸载的应用的`appId`。
+
+使用`ll-cli uninstall`+`appId`卸载玲珑应用。  
+例如：
+```
+ll-cli uninstall org.deepin.calculator
+```
+
+等待卸载完成即可。
+
+默认卸载最高版本，可以通过`appid`后附加对应版本号卸载指定版本：
+例如：
+```
+ll-cli uninstall org.deepin.calculator/5.1.2
+```
