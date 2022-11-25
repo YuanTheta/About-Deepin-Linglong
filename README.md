@@ -31,4 +31,4 @@ sudo apt install linglong-builder \
 已预装玲珑环境
 ### (2)浏览器版本太旧
 从[Google Chrome](https://www.google.cn/intl/zh-CN/chrome/)官网下载最新版本的Chrome浏览器。  
-![chrome](https://github.com/YuanTheta/Deepin-Linglong/raw/master/Pictures/chrome.jpg)
+![chrome](https://github.com/YuanTheta/Deepin-Linglong/raw/main/Pictures/chrome.jpg)
