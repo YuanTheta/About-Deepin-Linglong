@@ -1,10 +1,17 @@
 # Deepin 玲珑应用 相关的常见问题及解决方案
-## 1.如何安装玲珑应用
+## 目录
+1. [如何安装玲珑应用](#如何安装玲珑应用)
+2. [Deepin无法安装玲珑应用](Deepin无法安装玲珑应用)
+    * 没有安装玲珑环境
+    * 浏览器版本太旧
+3. [右键菜单中无法卸载玲珑应用](#右键菜单中无法卸载玲珑应用)
+4. [从玲珑安装的Chrome每次打开都有警告与更新提示](#从玲珑安装的chrome每次打开都有警告与更新提示)
+## 如何安装玲珑应用
 * 访问玲珑的官方网站https://store.linglong.dev  
 * 单击`install`  
 * 在弹出的对话框中，选择`打开 odg-open`  
 * 等待安装完成  
-## 2.Deepin无法安装玲珑应用
+## Deepin无法安装玲珑应用
 ### (1)没有安装玲珑环境
 **Deepin V20**  
 使用`uname -r`查看内核版本。  
@@ -31,8 +38,9 @@ sudo apt install linglong-builder \
 ### (2)浏览器版本太旧
 从[Google Chrome](https://www.google.cn/intl/zh-CN/chrome/)官网下载最新版本的Chrome浏览器。  
 ![chrome](./Picture/chrome.jpg)  
-之后回到[1.如何安装玲珑应用](#1.如何安装玲珑应用)  
-## 3.右键菜单中无法卸载玲珑应用
+之后回到[如何安装玲珑应用](#如何安装玲珑应用)  
+`不知道为什么，我使用相同内核版本的Firefox，却没有安装成功`
+## 右键菜单中无法卸载玲珑应用
 使用`ll-cli list`查看已安装的玲珑应用。  
 ```
 ll-cli list
@@ -50,7 +58,7 @@ ll-cli uninstall org.deepin.calculator
 ll-cli uninstall org.deepin.calculator/5.1.2
 ```
 该命令执行成功后，该玲珑应用将从系统中被卸载掉。
-## 4.从玲珑安装的Chrome每次打开都有警告与更新提示
+## 从玲珑安装的Chrome每次打开都有警告与更新提示
 ![chrome-error](./Picture/linglong-chrome-error.png)  
   
 跳转到以下目录，编辑`google-chrome.desktop`文件，删除其中的`--no-sandbox`参数。  
@@ -58,7 +66,7 @@ ll-cli uninstall org.deepin.calculator/5.1.2
 cd persistent/linglong/entries/share/applications
 sudo vim google-chrome.desktop
 ```
-在*Exec*所在行中，删除参数“ --no-sandbox”  
+在**Exec**所在行中，删除参数“ --no-sandbox”  
   
 增加参数` --disable-background-networking`  
 也就是由：  
